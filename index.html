@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jayvan — Video Editor Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home"    class="nav__link">HOME</a>
+      <a href="#about"   class="nav__link">ABOUT</a>
+      <a href="#videos"  class="nav__link">VIDEOS</a>
+      <a href="#tools"   class="nav__link">TOOLS</a>
+      <a href="#contact" class="nav__link">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero section" id="home">
+      <div class="hero__bg-text" aria-hidden="true">JAYVAN</div>
+      <div class="hero__deco hero__deco--left"  aria-hidden="true"></div>
+      <div class="hero__deco hero__deco--right" aria-hidden="true"></div>
+
+      <div class="hero__left">
+        <p class="hero__greeting animate-in">Hello, I'm Jayvan</p>
+        <h1 class="hero__title animate-in delay-1">A VIDEO EDITOR</h1>
+        <p class="hero__subtitle animate-in delay-2">And this is my</p>
+        <h2 class="hero__portfolio animate-in delay-3">PORTFOLIO</h2>
+      </div>
+
+      <div class="hero__center animate-in delay-2">
+        <div class="hero__photo-frame">
+          <img
+            src="images/jayvann.png"
+            alt="Jayvan — Video Editor"
+            class="hero__photo"
+          />
+        </div>
+        <p class="hero__scroll-label">Scroll Down ↓</p>
+      </div>
+
+      <div class="hero__right animate-in delay-3">
+        <h3 class="hero__exp-title">EDITING<br />EXPERIENCE</h3>
+        <p class="hero__exp-desc">
+          Edited short-form videos for school projects and personal content.
+          Clean cuts, transitions, text overlays, and basic color correction.
+        </p>
+      </div>
+
+      <div class="hero__tagline animate-in delay-4">
+        <p>Your brand has a story.</p>
+        <p>Let's make sure the world hears it.</p>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+   <section class="about section" id="about">
+
+  <div class="about__card reveal">
+
+    <h2 class="section-title">ABOUT ME</h2>
+
+    <p class="about__text">
+      I'm Jayvan, a passionate video editor based in Metro Manila, Philippines.
+      I specialize in short-form content, reels, and e-commerce ads that stop the scroll
+      and tell your brand's story. Whether it's a punchy 15-second reel or a full-length
+      brand film, I bring creativity and precision to every frame.
+    </p>
+
+  </div>
+
+</section>
+
+    <!-- ─── SHORT / VERTICAL / REELS ─── -->
+    <section class="reels section" id="videos">
+      <h2 class="section-title section-title--center reveal">SHORT / VERTICAL / REELS</h2>
+
+      <div class="reels__grid">
+        <!-- ─── VIDEO 1 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/0205.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 2 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/0210.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 3 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/1218.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 4 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/0204.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 5 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/1221.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 6 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/1206.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 7 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/0315.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 8 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/0220.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 9 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/0105.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 10 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/0103.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 11 ─── -->
+        <div class="reels__phones-row reveal delay-1">
+          <div class="video-wrapper" onclick="toggleVideo(this)">
+            <video src="videos/0215.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
+        </div>
+        <!-- ─── VIDEO 12 ─── -->
+        <div class="reels__phones-row row12 reveal delay-1">
+
+        <div class="video-wrapper landscape" onclick="toggleVideo(this)">
+          <video src="videos/2007.mp4" playsinline></video>
+          <div class="play-icon">▶</div>
+          <div class="pause-icon">⏸</div>
+        </div>
+
+        <div class="reels__desc-card">
+          <p class="typing-text">
+            Transforming raw footage into high-retention content that speaks your
+            brand's language — bridging simple clips and scroll-stopping visual stories.
+          </p>
+          <span class="reels__deco" aria-hidden="true">✿ ❋</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── TOOLS ─── -->
+    <section class="tools-section section" id="tools">
+      <h2 class="section-title section-title--center reveal">MY CREATIVE STACK</h2>
+      <div class="tools__flow reveal delay-1">
+
+        <div class="tool-node">
+          <div class="tool-node__icon">
+            <img src="https://placehold.co/54x54/1a1a1a/9b59b6?text=CC" alt="CapCut" />
+          </div>
+          <span class="tool-node__label">CAPCUT</span>
+        </div>
+
+        <div class="tool-node__arrow" aria-hidden="true">→</div>
+
+        <div class="tool-node">
+          <div class="tool-node__icon">
+            <img src="https://placehold.co/54x54/00c4cc/fff?text=Cv" alt="Canva" />
+          </div>
+          <span class="tool-node__label">CANVA</span>
+        </div>
+
+        <div class="tool-node__arrow" aria-hidden="true">→</div>
+
+        <div class="tool-node">
+          <div class="tool-node__icon">
+            <img src="https://placehold.co/54x54/1a1a1a/fff?text=El" alt="ElevenLabs" />
+          </div>
+          <span class="tool-node__label">ELEVENLABS</span>
+        </div>
+
+        <div class="tool-node__arrow" aria-hidden="true">→</div>
+
+        <div class="tool-node">
+          <div class="tool-node__icon">
+            <img src="https://placehold.co/54x54/1a1a1a/10a37f?text=AI" alt="ChatGPT" />
+          </div>
+          <span class="tool-node__label">CHATGPT</span>
+        </div>
+
+        <div class="tool-node__arrow" aria-hidden="true">→</div>
+
+        <div class="tool-node">
+          <div class="tool-node__icon">
+            <img src="https://placehold.co/54x54/1a1a1a/4285f4?text=G" alt="Gemini" />
+          </div>
+          <span class="tool-node__label">GEMINI</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section class="contact section" id="contact">
+      <div class="contact__inner reveal">
+        <h2 class="contact__title">CONTACT ME</h2>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="contact__fields">
+            <div class="contact__form-group">
+              <label class="contact__label" for="name">My Name Is</label>
+              <input class="contact__input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="contact__form-group">
+              <label class="contact__label" for="message">I Am Interested In</label>
+              <input class="contact__input" type="text" id="message" name="message" placeholder="Tell me more…" required />
+            </div>
+            <button class="contact__btn" type="submit">SEND</button>
+          </div>
+          <p class="contact__feedback" id="contactFeedback" aria-live="polite"></p>
+        </form>
+
+        <address class="contact__info">
+          <div class="contact__info-item">
+            <span class="contact__info-icon" aria-hidden="true">📞</span>
+            <a href="tel:+9933240052">+99 332 400 52</a>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon" aria-hidden="true">📍</span>
+            <span>Metro Manila, Philippines</span>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon" aria-hidden="true">✉️</span>
+            <a href="mailto:jayvanmasalunga0@gmail.com">jayvanmasalunga0@gmail.com</a>
+          </div>
+        </address>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Jayvan. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const text = document.querySelector(".typing-text");
+  const fullText = text.textContent;
+
+  let i = 0;
+
+  function type() {
+    text.textContent = fullText.slice(0, i);
+    i++;
+
+    if (i > fullText.length) {
+      setTimeout(() => {
+        i = 0;
+        setTimeout(type, 800); // pause before restart
+      }, 1200);
+      return;
+    }
+
+    setTimeout(type, 30); // typing speed
+  }
+
+  type();
+});
+</script>
+
+</body>
+</html>>
