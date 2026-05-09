@@ -15,11 +15,21 @@
   <!-- HEADER / NAV -->
   <header class="site-header" id="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a href="#home"    class="nav__link">HOME</a>
-      <a href="#about"   class="nav__link">ABOUT</a>
-      <a href="#videos"  class="nav__link">VIDEOS</a>
-      <a href="#tools"   class="nav__link">TOOLS</a>
-      <a href="#contact" class="nav__link">CONTACT</a>
+      <!-- Hamburger button (mobile only) -->
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav links -->
+      <div class="nav__links" id="navLinks">
+        <a href="#home"    class="nav__link" onclick="closeMenu()">HOME</a>
+        <a href="#about"   class="nav__link" onclick="closeMenu()">ABOUT</a>
+        <a href="#videos"  class="nav__link" onclick="closeMenu()">VIDEOS</a>
+        <a href="#tools"   class="nav__link" onclick="closeMenu()">TOOLS</a>
+        <a href="#contact" class="nav__link" onclick="closeMenu()">CONTACT</a>
+      </div>
     </nav>
   </header>
 
@@ -64,29 +74,24 @@
     </section>
 
     <!-- ─── ABOUT ─── -->
-   <section class="about section" id="about">
-
-  <div class="about__card reveal">
-
-    <h2 class="section-title">ABOUT ME</h2>
-
-    <p class="about__text">
-      I'm Jayvan, a passionate video editor based in Metro Manila, Philippines.
-      I specialize in short-form content, reels, and e-commerce ads that stop the scroll
-      and tell your brand's story. Whether it's a punchy 15-second reel or a full-length
-      brand film, I bring creativity and precision to every frame.
-    </p>
-
-  </div>
-
-</section>
+    <section class="about section" id="about">
+      <div class="about__card reveal">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p class="about__text">
+          I'm Jayvan, a passionate video editor based in Metro Manila, Philippines.
+          I specialize in short-form content, reels, and e-commerce ads that stop the scroll
+          and tell your brand's story. Whether it's a punchy 15-second reel or a full-length
+          brand film, I bring creativity and precision to every frame.
+        </p>
+      </div>
+    </section>
 
     <!-- ─── SHORT / VERTICAL / REELS ─── -->
     <section class="reels section" id="videos">
       <h2 class="section-title section-title--center reveal">SHORT / VERTICAL / REELS</h2>
 
       <div class="reels__grid">
-        <!-- ─── VIDEO 1 ─── -->
+        <!-- Videos 1–11: standard portrait -->
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/0205.mp4" playsinline></video>
@@ -94,7 +99,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 2 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/0210.mp4" playsinline></video>
@@ -102,7 +107,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 3 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/1218.mp4" playsinline></video>
@@ -110,7 +115,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 4 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/0204.mp4" playsinline></video>
@@ -118,7 +123,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 5 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/1221.mp4" playsinline></video>
@@ -126,7 +131,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 6 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/1206.mp4" playsinline></video>
@@ -134,7 +139,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 7 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/0315.mp4" playsinline></video>
@@ -142,7 +147,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 8 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/0220.mp4" playsinline></video>
@@ -150,7 +155,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 9 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/0105.mp4" playsinline></video>
@@ -158,7 +163,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 10 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/0103.mp4" playsinline></video>
@@ -166,7 +171,7 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 11 ─── -->
+
         <div class="reels__phones-row reveal delay-1">
           <div class="video-wrapper" onclick="toggleVideo(this)">
             <video src="videos/0215.mp4" playsinline></video>
@@ -174,23 +179,23 @@
             <div class="pause-icon">⏸</div>
           </div>
         </div>
-        <!-- ─── VIDEO 12 ─── -->
+
+        <!-- ─── VIDEO 12 — full-width landscape row ─── -->
         <div class="reels__phones-row row12 reveal delay-1">
+          <div class="video-wrapper landscape" onclick="toggleVideo(this)">
+            <video src="videos/2007.mp4" playsinline></video>
+            <div class="play-icon">▶</div>
+            <div class="pause-icon">⏸</div>
+          </div>
 
-        <div class="video-wrapper landscape" onclick="toggleVideo(this)">
-          <video src="videos/2007.mp4" playsinline></video>
-          <div class="play-icon">▶</div>
-          <div class="pause-icon">⏸</div>
+          <div class="reels__desc-card">
+            <p class="typing-text">
+              Transforming raw footage into high-retention content that speaks your
+              brand's language — bridging simple clips and scroll-stopping visual stories.
+            </p>
+            <span class="reels__deco" aria-hidden="true">✿ ❋</span>
+          </div>
         </div>
-
-        <div class="reels__desc-card">
-          <p class="typing-text">
-            Transforming raw footage into high-retention content that speaks your
-            brand's language — bridging simple clips and scroll-stopping visual stories.
-          </p>
-          <span class="reels__deco" aria-hidden="true">✿ ❋</span>
-        </div>
-
       </div>
     </section>
 
@@ -250,19 +255,19 @@
       <div class="contact__inner reveal">
         <h2 class="contact__title">CONTACT ME</h2>
 
-        <form class="contact__form" id="contactForm" novalidate>
+        <form class="contact__form">
           <div class="contact__fields">
             <div class="contact__form-group">
-              <label class="contact__label" for="name">My Name Is</label>
-              <input class="contact__input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+              <label class="contact__label">Name</label>
+              <input class="contact__input" type="text" id="name" required />
             </div>
             <div class="contact__form-group">
-              <label class="contact__label" for="message">I Am Interested In</label>
-              <input class="contact__input" type="text" id="message" name="message" placeholder="Tell me more…" required />
+              <label class="contact__label">Message</label>
+              <input class="contact__input" type="text" id="message" required />
             </div>
             <button class="contact__btn" type="submit">SEND</button>
           </div>
-          <p class="contact__feedback" id="contactFeedback" aria-live="polite"></p>
+          <p class="contact__feedback" id="contactFeedback"></p>
         </form>
 
         <address class="contact__info">
@@ -288,33 +293,131 @@
   <footer class="site-footer">
     <p>© 2025 Jayvan. All rights reserved.</p>
   </footer>
+
   <script src="script.js"></script>
 
-  <script>
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ <script>
+
+   /* CONTACT FORM + EMAILJS */
 document.addEventListener("DOMContentLoaded", () => {
-  const text = document.querySelector(".typing-text");
-  const fullText = text.textContent;
 
-  let i = 0;
+  emailjs.init("20XJqebH2Zwo8qe6G");
 
-  function type() {
-    text.textContent = fullText.slice(0, i);
-    i++;
+  const form = document.querySelector(".contact__form");
 
-    if (i > fullText.length) {
-      setTimeout(() => {
-        i = 0;
-        setTimeout(type, 800); // pause before restart
-      }, 1200);
-      return;
+  if (!form) return;
+
+  const feedback = document.getElementById("contactFeedback");
+  const btn = document.querySelector(".contact__btn");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    /* ADD LOADING STATE */
+    if (btn) {
+      btn.classList.add("loading");
+      btn.innerText = "SENDING...";
+      btn.disabled = true;
     }
 
-    setTimeout(type, 30); // typing speed
+    if (feedback) {
+      feedback.innerText = "Sending...";
+      feedback.className = "contact__feedback";
+    }
+
+    emailjs.send("service_5bo82lt", "template_jzcv58m", {
+      name: document.getElementById("name")?.value || "",
+      message: document.getElementById("message")?.value || ""
+    })
+
+    .then(() => {
+
+      if (feedback) {
+        feedback.innerText = "Message sent successfully!";
+        feedback.className = "contact__feedback contact__feedback--success";
+      }
+
+      form.reset();
+
+    })
+
+    .catch((error) => {
+
+      if (feedback) {
+        feedback.innerText = "Failed to send message.";
+      }
+
+      console.log(error);
+
+    })
+
+    .finally(() => {
+
+      /* RESET BUTTON */
+      if (btn) {
+        btn.classList.remove("loading");
+        btn.innerText = "SEND";
+        btn.disabled = false;
+      }
+
+    });
+
+  });
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  /* ── Typing animation ── */
+  const text = document.querySelector(".typing-text");
+
+  if (text) {
+    const fullText = text.innerText;
+    let i = 0;
+
+    function type() {
+      text.innerText = fullText.slice(0, i);
+      i++;
+
+      if (i > fullText.length) {
+        setTimeout(() => {
+          i = 0;
+          text.innerText = "";
+          setTimeout(type, 500);
+        }, 1500);
+        return;
+      }
+
+      setTimeout(type, 35);
+    }
+
+    type();
   }
 
-  type();
+  /* ── Mobile hamburger menu ── */
+  const hamburger = document.getElementById("navHamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  if (hamburger && navLinks) {
+
+    hamburger.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("nav__links--open");
+      hamburger.classList.toggle("nav__hamburger--open", isOpen);
+      hamburger.setAttribute("aria-expanded", isOpen);
+    });
+
+    function closeMenu() {
+      navLinks.classList.remove("nav__links--open");
+      hamburger.classList.remove("nav__hamburger--open");
+      hamburger.setAttribute("aria-expanded", "false");
+    }
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".nav")) closeMenu();
+    });
+  }
+
 });
 </script>
-
 </body>
-</html>>
+</html>
