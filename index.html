@@ -12,17 +12,11 @@
 
 <body>
 
-  <!-- HEADER / NAV -->
   <header class="site-header" id="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <!-- Hamburger button (mobile only) -->
       <button class="nav__hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
-
-      <!-- Nav links -->
       <div class="nav__links" id="navLinks">
         <a href="#home"    class="nav__link" onclick="closeMenu()">HOME</a>
         <a href="#about"   class="nav__link" onclick="closeMenu()">ABOUT</a>
@@ -35,7 +29,6 @@
 
   <main>
 
-    <!-- ─── HERO ─── -->
     <section class="hero section" id="home">
       <div class="hero__bg-text" aria-hidden="true">JAYVAN</div>
       <div class="hero__deco hero__deco--left"  aria-hidden="true"></div>
@@ -50,11 +43,7 @@
 
       <div class="hero__center animate-in delay-2">
         <div class="hero__photo-frame">
-          <img
-            src="images/jayvann.png"
-            alt="Jayvan — Video Editor"
-            class="hero__photo"
-          />
+          <img src="images/jayvann.png" alt="Jayvan — Video Editor" class="hero__photo" />
         </div>
         <p class="hero__scroll-label">Scroll Down ↓</p>
       </div>
@@ -73,7 +62,6 @@
       </div>
     </section>
 
-    <!-- ─── ABOUT ─── -->
     <section class="about section" id="about">
       <div class="about__card reveal">
         <h2 class="section-title">ABOUT ME</h2>
@@ -86,108 +74,117 @@
       </div>
     </section>
 
-    <!-- ─── SHORT / VERTICAL / REELS ─── -->
     <section class="reels section" id="videos">
       <h2 class="section-title section-title--center reveal">SHORT / VERTICAL / REELS</h2>
 
       <div class="reels__grid">
-        <!-- Videos 1–11: standard portrait -->
+
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/0205.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/cEybxGM8z2Y?rel=0&modestbranding=1"
+              title="Reel 1" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="reels__phones-row reveal delay- 1">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Y4qqD6UdPBY?rel=0&modestbranding=1"
+              title="Reel 2" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/0210.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/cgYSMnbVQ_s?rel=0&modestbranding=1"
+              title="Reel 3" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/1218.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/q9kn3sKK6Nc?rel=0&modestbranding=1"
+              title="Reel 4" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/0204.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/8bGROPVZ8qs?rel=0&modestbranding=1"
+              title="Reel 5" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/1221.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/5QZtuMehuFQ?rel=0&modestbranding=1"
+              title="Reel 6" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/1206.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/x-K_IIrviA0?feature?rel=0&modestbranding=1"
+              title="Reel 7" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/0315.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/KF18yfCQmW0?rel=0&modestbranding=1"
+              title="Reel 8" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/0220.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/-AzD55Zw0A8?rel=0&modestbranding=1"
+              title="Reel 9" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/0105.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/U7HWyPUtesc?rel=0&modestbranding=1"
+              title="Reel 10" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/0103.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/8oBrZ17XQ7o?rel=0&modestbranding=1"
+              title="Reel 11" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
 
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper" onclick="toggleVideo(this)">
-            <video src="videos/0215.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
-          </div>
-        </div>
-
-        <!-- ─── VIDEO 12 — full-width landscape row ─── -->
         <div class="reels__phones-row row12 reveal delay-1">
-          <div class="video-wrapper landscape" onclick="toggleVideo(this)">
-            <video src="videos/2007.mp4" playsinline></video>
-            <div class="play-icon">▶</div>
-            <div class="pause-icon">⏸</div>
+          <div class="video-wrapper landscape">
+            <iframe src="https://www.youtube.com/embed/n8Y12wETFhU?rel=0&modestbranding=1"
+              title="Reel 12" frameborder="0" loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
-
           <div class="reels__desc-card">
             <p class="typing-text">
               Transforming raw footage into high-retention content that speaks your
@@ -196,10 +193,10 @@
             <span class="reels__deco" aria-hidden="true">✿ ❋</span>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- ─── TOOLS ─── -->
     <section class="tools-section section" id="tools">
       <h2 class="section-title section-title--center reveal">MY CREATIVE STACK</h2>
       <div class="tools__flow reveal delay-1">
@@ -250,24 +247,23 @@
       </div>
     </section>
 
-    <!-- ─── CONTACT ─── -->
     <section class="contact section" id="contact">
       <div class="contact__inner reveal">
         <h2 class="contact__title">CONTACT ME</h2>
 
-        <form class="contact__form">
+        <form class="contact__form" id="contactForm">
           <div class="contact__fields">
             <div class="contact__form-group">
-              <label class="contact__label">Name</label>
-              <input class="contact__input" type="text" id="name" required />
+              <label class="contact__label" for="name">Name</label>
+              <input class="contact__input" type="text" id="name" name="name" placeholder="Your name" required />
             </div>
             <div class="contact__form-group">
-              <label class="contact__label">Message</label>
-              <input class="contact__input" type="text" id="message" required />
+              <label class="contact__label" for="message">Message</label>
+              <input class="contact__input" type="text" id="message" name="message" placeholder="Tell me more…" required />
             </div>
             <button class="contact__btn" type="submit">SEND</button>
           </div>
-          <p class="contact__feedback" id="contactFeedback"></p>
+          <p class="contact__feedback" id="contactFeedback" aria-live="polite"></p>
         </form>
 
         <address class="contact__info">
@@ -289,135 +285,103 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <p>© 2025 Jayvan. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 
- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
- <script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
 
-   /* CONTACT FORM + EMAILJS */
-document.addEventListener("DOMContentLoaded", () => {
+    /* ── EmailJS init ── */
+    emailjs.init("20XJqebH2Zwo8qe6G");
 
-  emailjs.init("20XJqebH2Zwo8qe6G");
+    const form     = document.getElementById("contactForm");
+    const feedback = document.getElementById("contactFeedback");
+    const btn      = form ? form.querySelector(".contact__btn") : null;
 
-  const form = document.querySelector(".contact__form");
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-  if (!form) return;
+        if (btn) { btn.innerText = "SENDING..."; btn.disabled = true; }
+        if (feedback) { feedback.innerText = "Sending…"; feedback.className = "contact__feedback"; }
 
-  const feedback = document.getElementById("contactFeedback");
-  const btn = document.querySelector(".contact__btn");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    /* ADD LOADING STATE */
-    if (btn) {
-      btn.classList.add("loading");
-      btn.innerText = "SENDING...";
-      btn.disabled = true;
+        emailjs.send("service_5bo82lt", "template_jzcv58m", {
+          name:    document.getElementById("name")?.value    || "",
+          message: document.getElementById("message")?.value || ""
+        })
+        .then(() => {
+          if (feedback) {
+            feedback.innerText = "✅ Message sent successfully!";
+            feedback.className = "contact__feedback contact__feedback--success";
+          }
+          form.reset();
+        })
+        .catch((err) => {
+          if (feedback) feedback.innerText = "❌ Failed to send. Please try again.";
+          console.error(err);
+        })
+        .finally(() => {
+          if (btn) { btn.innerText = "SEND"; btn.disabled = false; }
+        });
+      });
     }
 
-    if (feedback) {
-      feedback.innerText = "Sending...";
-      feedback.className = "contact__feedback";
+    /* ── Typing animation — starts only when card scrolls into view ── */
+    const textEl = document.querySelector(".typing-text");
+    if (textEl) {
+      const full = textEl.innerText.trim();
+      let i = 0;
+      textEl.innerText = "";
+
+      function typeLoop() {
+        textEl.innerText = full.slice(0, i++);
+        if (i > full.length) {
+          setTimeout(() => { i = 0; setTimeout(typeLoop, 500); }, 1800);
+        } else {
+          setTimeout(typeLoop, 35);
+        }
+      }
+
+      const typingObs = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) { typeLoop(); typingObs.disconnect(); }
+      }, { threshold: 0.4 });
+      typingObs.observe(textEl);
     }
 
-    emailjs.send("service_5bo82lt", "template_jzcv58m", {
-      name: document.getElementById("name")?.value || "",
-      message: document.getElementById("message")?.value || ""
-    })
+    /* ── Hamburger ── */
+    const hamburger = document.getElementById("navHamburger");
+    const navLinks  = document.getElementById("navLinks");
 
-    .then(() => {
+    if (hamburger && navLinks) {
+      hamburger.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("nav__links--open");
+        hamburger.classList.toggle("nav__hamburger--open", isOpen);
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+      });
 
-      if (feedback) {
-        feedback.innerText = "Message sent successfully!";
-        feedback.className = "contact__feedback contact__feedback--success";
-      }
-
-      form.reset();
-
-    })
-
-    .catch((error) => {
-
-      if (feedback) {
-        feedback.innerText = "Failed to send message.";
-      }
-
-      console.log(error);
-
-    })
-
-    .finally(() => {
-
-      /* RESET BUTTON */
-      if (btn) {
-        btn.classList.remove("loading");
-        btn.innerText = "SEND";
-        btn.disabled = false;
-      }
-
-    });
-
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".nav")) closeMenu();
+      });
+    }
   });
 
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  /* ── Typing animation ── */
-  const text = document.querySelector(".typing-text");
-
-  if (text) {
-    const fullText = text.innerText;
-    let i = 0;
-
-    function type() {
-      text.innerText = fullText.slice(0, i);
-      i++;
-
-      if (i > fullText.length) {
-        setTimeout(() => {
-          i = 0;
-          text.innerText = "";
-          setTimeout(type, 500);
-        }, 1500);
-        return;
-      }
-
-      setTimeout(type, 35);
-    }
-
-    type();
-  }
-
-  /* ── Mobile hamburger menu ── */
-  const hamburger = document.getElementById("navHamburger");
-  const navLinks = document.getElementById("navLinks");
-
-  if (hamburger && navLinks) {
-
-    hamburger.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("nav__links--open");
-      hamburger.classList.toggle("nav__hamburger--open", isOpen);
-      hamburger.setAttribute("aria-expanded", isOpen);
-    });
-
-    function closeMenu() {
-      navLinks.classList.remove("nav__links--open");
+  /* closeMenu — called by onclick on <a> tags */
+  function closeMenu() {
+    const hamburger = document.getElementById("navHamburger");
+    const navLinks  = document.getElementById("navLinks");
+    if (!navLinks) return;
+    navLinks.classList.remove("nav__links--open");
+    if (hamburger) {
       hamburger.classList.remove("nav__hamburger--open");
       hamburger.setAttribute("aria-expanded", "false");
     }
-
-    document.addEventListener("click", (e) => {
-      if (!e.target.closest(".nav")) closeMenu();
-    });
   }
+  </script>
 
-});
-</script>
 </body>
 </html>
