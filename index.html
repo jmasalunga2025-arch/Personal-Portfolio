@@ -18,18 +18,17 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav__links" id="navLinks">
-        <a href="#home"    class="nav__link" onclick="closeMenu()">HOME</a>
-        <a href="#about"   class="nav__link" onclick="closeMenu()">ABOUT</a>
-        <a href="#videos"  class="nav__link" onclick="closeMenu()">VIDEOS</a>
-        <a href="#tools"   class="nav__link" onclick="closeMenu()">TOOLS</a>
-        <a href="#contact" class="nav__link" onclick="closeMenu()">CONTACT</a>
+        <a href="index.html"   class="nav__link">HOME</a>
+        <a href="about.html"   class="nav__link">ABOUT</a>
+        <a href="videos.html"  class="nav__link">VIDEOS</a>
+        <a href="tools.html"   class="nav__link">TOOLS</a>
+        <a href="contact.html" class="nav__link">CONTACT</a>
       </div>
     </nav>
   </header>
 
   <main>
-
-    <section class="hero section" id="home">
+    <section class="hero" id="home">
       <div class="hero__bg-text" aria-hidden="true">JAYVAN</div>
       <div class="hero__deco hero__deco--left"  aria-hidden="true"></div>
       <div class="hero__deco hero__deco--right" aria-hidden="true"></div>
@@ -39,13 +38,20 @@
         <h1 class="hero__title animate-in delay-1">A VIDEO EDITOR</h1>
         <p class="hero__subtitle animate-in delay-2">And this is my</p>
         <h2 class="hero__portfolio animate-in delay-3">PORTFOLIO</h2>
+
+        <div class="hero__role-wrap animate-in delay-1" aria-label="Video Editor, Creator, Student, Storyteller">
+          <span class="hero__role-item">VIDEO EDITOR</span>
+          <span class="hero__role-item">CREATOR</span>
+          <span class="hero__role-item">STUDENT</span>
+          <span class="hero__role-item">STORYTELLER</span>
+        </div>
       </div>
 
       <div class="hero__center animate-in delay-2">
         <div class="hero__photo-frame">
           <img src="images/jayvann.png" alt="Jayvan — Video Editor" class="hero__photo" />
         </div>
-        <p class="hero__scroll-label">Scroll Down ↓</p>
+        <p class="hero__scroll-label">Explore ↓</p>
       </div>
 
       <div class="hero__right animate-in delay-3">
@@ -58,330 +64,135 @@
 
       <div class="hero__tagline animate-in delay-4">
         <p>Your brand has a story.</p>
-        <p>Let's make sure the world hears it.</p>
+        <p>Let's make sure the world sees it.</p>
       </div>
     </section>
 
-    <section class="about section" id="about">
-      <div class="about__card reveal">
-        <h2 class="section-title">ABOUT ME</h2>
-        <p class="about__text">
-          I'm Jayvan, a passionate video editor based in Metro Manila, Philippines.
-          I specialize in short-form content, reels, and e-commerce ads that stop the scroll
-          and tell your brand's story. Whether it's a punchy 15-second reel or a full-length
-          brand film, I bring creativity and precision to every frame.
-        </p>
+    <section class="home-cards">
+      <div class="home-cards__grid reveal">
+        <a href="about.html" class="home-card">
+          <span class="home-card__icon">👤</span>
+          <h3 class="home-card__title">ABOUT</h3>
+          <p class="home-card__desc">Who I am, my journey and strengths</p>
+          <span class="home-card__arrow">→</span>
+        </a>
+        <a href="videos.html" class="home-card">
+          <span class="home-card__icon">🎬</span>
+          <h3 class="home-card__title">VIDEOS</h3>
+          <p class="home-card__desc">Short-form reels and edited content</p>
+          <span class="home-card__arrow">→</span>
+        </a>
+        <a href="tools.html" class="home-card">
+          <span class="home-card__icon">⚙️</span>
+          <h3 class="home-card__title">TOOLS</h3>
+          <p class="home-card__desc">My creative stack and workflow</p>
+          <span class="home-card__arrow">→</span>
+        </a>
+        <a href="contact.html" class="home-card">
+          <span class="home-card__icon">✉️</span>
+          <h3 class="home-card__title">CONTACT</h3>
+          <p class="home-card__desc">Let's work together on something great</p>
+          <span class="home-card__arrow">→</span>
+        </a>
       </div>
     </section>
-
-    <section class="reels section" id="videos">
-      <h2 class="section-title section-title--center reveal">SHORT / VERTICAL / REELS</h2>
-
-      <div class="reels__grid">
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/cEybxGM8z2Y?rel=0&modestbranding=1"
-              title="Reel 1" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay- 1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/Y4qqD6UdPBY?rel=0&modestbranding=1"
-              title="Reel 2" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/cgYSMnbVQ_s?rel=0&modestbranding=1"
-              title="Reel 3" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/q9kn3sKK6Nc?rel=0&modestbranding=1"
-              title="Reel 4" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/8bGROPVZ8qs?rel=0&modestbranding=1"
-              title="Reel 5" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/5QZtuMehuFQ?rel=0&modestbranding=1"
-              title="Reel 6" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/x-K_IIrviA0?feature?rel=0&modestbranding=1"
-              title="Reel 7" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/KF18yfCQmW0?rel=0&modestbranding=1"
-              title="Reel 8" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/-AzD55Zw0A8?rel=0&modestbranding=1"
-              title="Reel 9" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/U7HWyPUtesc?rel=0&modestbranding=1"
-              title="Reel 10" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row reveal delay-1">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/8oBrZ17XQ7o?rel=0&modestbranding=1"
-              title="Reel 11" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <div class="reels__phones-row row12 reveal delay-1">
-          <div class="video-wrapper landscape">
-            <iframe src="https://www.youtube.com/embed/n8Y12wETFhU?rel=0&modestbranding=1"
-              title="Reel 12" frameborder="0" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <div class="reels__desc-card">
-            <p class="typing-text">
-              Transforming raw footage into high-retention content that speaks your
-              brand's language — bridging simple clips and scroll-stopping visual stories.
-            </p>
-            <span class="reels__deco" aria-hidden="true">✿ ❋</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="tools-section section" id="tools">
-      <h2 class="section-title section-title--center reveal">MY CREATIVE STACK</h2>
-      <div class="tools__flow reveal delay-1">
-
-        <div class="tool-node">
-          <div class="tool-node__icon">
-            <img src="https://placehold.co/54x54/1a1a1a/9b59b6?text=CC" alt="CapCut" />
-          </div>
-          <span class="tool-node__label">CAPCUT</span>
-        </div>
-
-        <div class="tool-node__arrow" aria-hidden="true">→</div>
-
-        <div class="tool-node">
-          <div class="tool-node__icon">
-            <img src="https://placehold.co/54x54/00c4cc/fff?text=Cv" alt="Canva" />
-          </div>
-          <span class="tool-node__label">CANVA</span>
-        </div>
-
-        <div class="tool-node__arrow" aria-hidden="true">→</div>
-
-        <div class="tool-node">
-          <div class="tool-node__icon">
-            <img src="https://placehold.co/54x54/1a1a1a/fff?text=El" alt="ElevenLabs" />
-          </div>
-          <span class="tool-node__label">ELEVENLABS</span>
-        </div>
-
-        <div class="tool-node__arrow" aria-hidden="true">→</div>
-
-        <div class="tool-node">
-          <div class="tool-node__icon">
-            <img src="https://placehold.co/54x54/1a1a1a/10a37f?text=AI" alt="ChatGPT" />
-          </div>
-          <span class="tool-node__label">CHATGPT</span>
-        </div>
-
-        <div class="tool-node__arrow" aria-hidden="true">→</div>
-
-        <div class="tool-node">
-          <div class="tool-node__icon">
-            <img src="https://placehold.co/54x54/1a1a1a/4285f4?text=G" alt="Gemini" />
-          </div>
-          <span class="tool-node__label">GEMINI</span>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="contact__inner reveal">
-        <h2 class="contact__title">CONTACT ME</h2>
-
-        <form class="contact__form" id="contactForm">
-          <div class="contact__fields">
-            <div class="contact__form-group">
-              <label class="contact__label" for="name">Name</label>
-              <input class="contact__input" type="text" id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div class="contact__form-group">
-              <label class="contact__label" for="message">Message</label>
-              <input class="contact__input" type="text" id="message" name="message" placeholder="Tell me more…" required />
-            </div>
-            <button class="contact__btn" type="submit">SEND</button>
-          </div>
-          <p class="contact__feedback" id="contactFeedback" aria-live="polite"></p>
-        </form>
-
-        <address class="contact__info">
-          <div class="contact__info-item">
-            <span class="contact__info-icon" aria-hidden="true">📞</span>
-            <a href="tel:+9933240052">+99 332 400 52</a>
-          </div>
-          <div class="contact__info-item">
-            <span class="contact__info-icon" aria-hidden="true">📍</span>
-            <span>Metro Manila, Philippines</span>
-          </div>
-          <div class="contact__info-item">
-            <span class="contact__info-icon" aria-hidden="true">✉️</span>
-            <a href="mailto:jayvanmasalunga0@gmail.com">jayvanmasalunga0@gmail.com</a>
-          </div>
-        </address>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
-    <p>© 2025 Jayvan. All rights reserved.</p>
+    <p>© 2026 Jayvan. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-
-    /* ── EmailJS init ── */
-    emailjs.init("20XJqebH2Zwo8qe6G");
-
-    const form     = document.getElementById("contactForm");
-    const feedback = document.getElementById("contactFeedback");
-    const btn      = form ? form.querySelector(".contact__btn") : null;
-
-    if (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        if (btn) { btn.innerText = "SENDING..."; btn.disabled = true; }
-        if (feedback) { feedback.innerText = "Sending…"; feedback.className = "contact__feedback"; }
-
-        emailjs.send("service_5bo82lt", "template_jzcv58m", {
-          name:    document.getElementById("name")?.value    || "",
-          message: document.getElementById("message")?.value || ""
-        })
-        .then(() => {
-          if (feedback) {
-            feedback.innerText = "✅ Message sent successfully!";
-            feedback.className = "contact__feedback contact__feedback--success";
-          }
-          form.reset();
-        })
-        .catch((err) => {
-          if (feedback) feedback.innerText = "❌ Failed to send. Please try again.";
-          console.error(err);
-        })
-        .finally(() => {
-          if (btn) { btn.innerText = "SEND"; btn.disabled = false; }
-        });
-      });
+  <style>
+    .home-cards {
+      padding: 4rem 4rem 6rem;
+      background:
+        radial-gradient(ellipse 60% 70% at 50% 0%, rgba(42, 14, 92, 0.5) 0%, transparent 70%),
+        var(--purple-deep);
     }
 
-    /* ── Typing animation — starts only when card scrolls into view ── */
-    const textEl = document.querySelector(".typing-text");
-    if (textEl) {
-      const full = textEl.innerText.trim();
-      let i = 0;
-      textEl.innerText = "";
-
-      function typeLoop() {
-        textEl.innerText = full.slice(0, i++);
-        if (i > full.length) {
-          setTimeout(() => { i = 0; setTimeout(typeLoop, 500); }, 1800);
-        } else {
-          setTimeout(typeLoop, 35);
-        }
-      }
-
-      const typingObs = new IntersectionObserver(([entry]) => {
-        if (entry.isIntersecting) { typeLoop(); typingObs.disconnect(); }
-      }, { threshold: 0.4 });
-      typingObs.observe(textEl);
+    .home-cards__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
-    /* ── Hamburger ── */
-    const hamburger = document.getElementById("navHamburger");
-    const navLinks  = document.getElementById("navLinks");
-
-    if (hamburger && navLinks) {
-      hamburger.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("nav__links--open");
-        hamburger.classList.toggle("nav__hamburger--open", isOpen);
-        hamburger.setAttribute("aria-expanded", String(isOpen));
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!e.target.closest(".nav")) closeMenu();
-      });
+    .home-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.25rem 1.5rem;
+      background: rgba(30, 10, 60, 0.65);
+      border: 1px solid rgba(155, 89, 182, 0.2);
+      border-radius: 18px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s ease;
+      text-decoration: none;
+      color: inherit;
     }
-  });
 
-  /* closeMenu — called by onclick on <a> tags */
-  function closeMenu() {
-    const hamburger = document.getElementById("navHamburger");
-    const navLinks  = document.getElementById("navLinks");
-    if (!navLinks) return;
-    navLinks.classList.remove("nav__links--open");
-    if (hamburger) {
-      hamburger.classList.remove("nav__hamburger--open");
-      hamburger.setAttribute("aria-expanded", "false");
+    .home-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 120%, rgba(155, 89, 182, 0.22) 0%, transparent 65%);
+      opacity: 0;
+      transition: opacity 0.35s ease;
     }
-  }
-  </script>
 
+    .home-card:hover::before { opacity: 1; }
+    .home-card:hover {
+      border-color: rgba(155, 89, 182, 0.55);
+      box-shadow: 0 0 35px rgba(155, 89, 182, 0.25);
+      transform: translateY(-6px);
+    }
+
+    .home-card__icon { font-size: 2rem; margin-bottom: 0.75rem; }
+
+    .home-card__title {
+      font-family: var(--font-serif);
+      font-size: 0.80rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--purple-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .home-card__desc {
+      font-size: 0.74rem;
+      color: var(--white-40);
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .home-card__arrow {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: var(--purple-vivid);
+      opacity: 0;
+      transform: translateX(-6px);
+      transition: all 0.3s ease;
+    }
+
+    .home-card:hover .home-card__arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @media (max-width: 768px) {
+      .home-cards { padding: 3rem 1.25rem 4rem; }
+      .home-cards__grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 480px) {
+      .home-cards__grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </body>
 </html>

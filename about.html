@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Jayvan Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html"   class="nav__link">HOME</a>
+        <a href="about.html"   class="nav__link">ABOUT</a>
+        <a href="videos.html"  class="nav__link">VIDEOS</a>
+        <a href="tools.html"   class="nav__link">TOOLS</a>
+        <a href="contact.html" class="nav__link">CONTACT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero animate-in">
+      <h1 class="page-hero__title">ABOUT ME</h1>
+      <p class="page-hero__subtitle">WHO I AM · MY JOURNEY · MY STRENGTHS</p>
+    </div>
+
+    <section class="about">
+
+      <div class="about__card reveal">
+        <h2 class="section-title">A LITTLE BIT ABOUT JAYVAN</h2>
+        <p class="about__text">
+          I'm Jayvan, a passionate video editor based in Metro Manila, Philippines.
+          I specialize in short-form content, reels, and e-commerce ads that stop the scroll
+          and tell your brand's story. Whether it's a punchy 15-second reel or a full-length
+          brand film, I bring creativity and precision to every frame.
+        </p>
+      </div>
+
+      <div class="about__skills reveal delay-1">
+        <h3 class="about__skills-title">SKILLS</h3>
+
+        <div class="skill-bar"> 
+          <span class="skill-bar__label">Video Editing</span>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="85"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span class="skill-bar__label">Color Grading</span>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="72"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span class="skill-bar__label">Motion Graphics</span>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="60"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span class="skill-bar__label">Storytelling</span>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span class="skill-bar__label">Sound Design</span>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="65"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <span class="skill-bar__label">Canva / Design</span>
+          <div class="skill-bar__track">
+            <div class="skill-bar__fill" data-pct="78"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <h3 class="about__skills-title reveal delay-2" style="width:100%;max-width:700px;margin-bottom:1.5rem;">MY JOURNEY</h3>
+      <div class="about__timeline reveal delay-2">
+
+        <div class="timeline-item">
+          <div class="timeline-item__dot"></div>
+          <div class="timeline-item__content">
+            <p class="timeline-item__year">2021</p>
+            <p class="timeline-item__title">First Edit</p>
+            <p class="timeline-item__desc">Started experimenting with video editing for school projects using mobile apps.</p>
+          </div>
+          <div style="flex:1"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__dot"></div>
+          <div style="flex:1"></div>
+          <div class="timeline-item__content">
+            <p class="timeline-item__year">2022</p>
+            <p class="timeline-item__title">Discovered CapCut</p>
+            <p class="timeline-item__desc">Leveled up workflow with CapCut — mastering transitions, text overlays, and effects.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__dot"></div>
+          <div class="timeline-item__content">
+            <p class="timeline-item__year">2023</p>
+            <p class="timeline-item__title">Short-Form Content</p>
+            <p class="timeline-item__desc">Began producing reels and short-form content, studying viral video patterns.</p>
+          </div>
+          <div style="flex:1"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__dot"></div>
+          <div style="flex:1"></div>
+          <div class="timeline-item__content">
+            <p class="timeline-item__year">2024</p>
+            <p class="timeline-item__title">AI-Powered Workflow</p>
+            <p class="timeline-item__desc">Integrated AI tools — ElevenLabs, ChatGPT, Gemini — into the creative process.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-item__dot" style="background:var(--purple-light);box-shadow:0 0 18px rgba(192,132,252,0.8)"></div>
+          <div class="timeline-item__content" style="border-color:rgba(192,132,252,0.35)">
+            <p class="timeline-item__year">2026</p>
+            <p class="timeline-item__title">Portfolio Launch</p>
+            <p class="timeline-item__desc">Built this portfolio to showcase work and start taking on brand & creator projects.</p>
+          </div>
+          <div style="flex:1"></div>
+        </div>
+
+      </div>
+
+      <h3 class="about__skills-title reveal delay-3" style="width:100%;max-width:900px;margin-bottom:1.5rem;">STRENGTHS</h3>
+      <div class="about__strengths reveal delay-3">
+
+        <div class="strength-card">
+          <span class="strength-card__icon">🎯</span>
+          <p class="strength-card__title">PRECISION</p>
+          <p class="strength-card__desc">Frame-perfect cuts and attention to pacing that keeps viewers hooked.</p>
+        </div>
+
+        <div class="strength-card">
+          <span class="strength-card__icon">💡</span>
+          <p class="strength-card__title">CREATIVITY</p>
+          <p class="strength-card__desc">Bringing fresh visual ideas to every project, regardless of the brief.</p>
+        </div>
+
+        <div class="strength-card">
+          <span class="strength-card__icon">⚡</span>
+          <p class="strength-card__title">FAST DELIVERY</p>
+          <p class="strength-card__desc">Efficient workflow means quality content delivered on time, every time.</p>
+        </div>
+
+        <div class="strength-card">
+          <span class="strength-card__icon">🤝</span>
+          <p class="strength-card__title">COLLABORATION</p>
+          <p class="strength-card__desc">Listening to feedback and aligning closely with brand vision and goals.</p>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Jayvan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

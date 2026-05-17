@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tools — Jayvan Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html"   class="nav__link">HOME</a>
+        <a href="about.html"   class="nav__link">ABOUT</a>
+        <a href="videos.html"  class="nav__link">VIDEOS</a>
+        <a href="tools.html"   class="nav__link">TOOLS</a>
+        <a href="contact.html" class="nav__link">CONTACT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero animate-in">
+      <h1 class="page-hero__title">MY STACK</h1>
+      <p class="page-hero__subtitle">TOOLS · WORKFLOW · CREATIVE PROCESS</p>
+    </div>
+
+    <section class="tools-section">
+      <div class="tools__dashboard reveal delay-2">
+
+        <div class="tool-card">
+          <div class="tool-card__icon">
+            <img src="https://placehold.co/72x72/1a1a1a/9b59b6?text=CC" alt="CapCut" />
+          </div>
+          <p class="tool-card__name">CAPCUT</p>
+          <p class="tool-card__desc">Primary editing suite. Fast cuts, transitions, text animations, and effects all in one place.</p>
+          <span class="tool-card__tag">MAIN EDITING TOOL</span>
+        </div>
+
+        <div class="tool-card">
+        <div class="tool-card__icon">
+            <img src="https://placehold.co/72x72/000000/00c3ff?text=DR" alt="DaVinci Resolve" />
+        </div>
+        <p class="tool-card__name">DAVINCI RESOLVE</p>
+        <p class="tool-card__desc">
+            My second editing tool used for advanced editing, color grading, and cinematic post-production work for high-quality videos.
+        </p>
+        <span class="tool-card__tag">SECOND EDITING TOOL</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__icon">
+            <img src="https://placehold.co/72x72/00c4cc/fff?text=Cv" alt="Canva" />
+          </div>
+          <p class="tool-card__name">CANVA</p>
+          <p class="tool-card__desc">Graphic design, thumbnails, motion templates, and quick visual branding elements.</p>
+          <span class="tool-card__tag">DESIGN</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__icon">
+            <img src="https://placehold.co/72x72/1a1a1a/fff?text=El" alt="ElevenLabs" />
+          </div>
+          <p class="tool-card__name">ELEVENLABS</p>
+          <p class="tool-card__desc">AI voice generation for narrations, voiceovers, and audio tracks that match the mood.</p>
+          <span class="tool-card__tag">AUDIO · AI</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__icon">
+            <img src="https://placehold.co/72x72/1a1a1a/10a37f?text=AI" alt="ChatGPT" />
+          </div>
+          <p class="tool-card__name">CHATGPT</p>
+          <p class="tool-card__desc">Script writing, hooks, captions, and ideation. AI brainstorming partner for every project.</p>
+          <span class="tool-card__tag">SCRIPTING · AI</span>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card__icon">
+            <img src="https://placehold.co/72x72/1a1a1a/4285f4?text=G" alt="Gemini" />
+          </div>
+          <p class="tool-card__name">GEMINI</p>
+          <p class="tool-card__desc">Research, content strategy, and creative direction backed by Google's AI capabilities.</p>
+          <span class="tool-card__tag">STRATEGY · AI</span>
+        </div>
+
+      </div>
+
+      <p class="tools__workflow-note reveal delay-3">
+        Each tool plays a defined role — from raw idea to final export, the stack is built for speed and quality.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Jayvan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <style>
+    .tools__workflow-note {
+      max-width: 600px;
+      text-align: center;
+      font-size: clamp(0.78rem, 1.5vw, 0.95rem);
+      color: var(--white-40);
+      line-height: 1.7;
+      font-style: italic;
+      margin-top: 2.5rem;
+    }
+  </style>
+</body>
+</html>

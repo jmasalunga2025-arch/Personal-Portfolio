@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Jayvan Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html"   class="nav__link">HOME</a>
+        <a href="about.html"   class="nav__link">ABOUT</a>
+        <a href="videos.html"  class="nav__link">VIDEOS</a>
+        <a href="tools.html"   class="nav__link">TOOLS</a>
+        <a href="contact.html" class="nav__link">CONTACT</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero animate-in">
+      <h1 class="page-hero__title">CONTACT</h1>
+      <p class="page-hero__subtitle">LET'S WORK TOGETHER</p>
+    </div>
+
+    <section class="contact">
+      <div class="contact__inner reveal">
+        <h2 class="contact__title">GET IN TOUCH</h2>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="contact__form-float">
+
+            <div class="contact__field-wrap">
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+              <label for="name">Your Name</label>
+            </div>
+
+            <div class="contact__field-wrap">
+              <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" />
+              <label for="email">Email (optional)</label>
+            </div>
+
+            <div class="contact__field-wrap">
+              <textarea id="message" name="message" placeholder="Tell me more…" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+          </div>
+
+          <button class="contact__btn" type="submit">SEND MESSAGE</button>
+          <p class="contact__feedback" id="contactFeedback" aria-live="polite"></p>
+        </form>
+
+        <address class="contact__info">
+          <div class="contact__info-item">
+            <span class="contact__info-icon" aria-hidden="true">📞</span>
+            <a href="tel:+9933240052">+99 332 400 52</a>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon" aria-hidden="true">📍</span>
+            <span>Metro Manila, Philippines</span>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon" aria-hidden="true">✉️</span>
+            <a href="mailto:jayvanmasalunga0@gmail.com">jayvanmasalunga0@gmail.com</a>
+          </div>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Jayvan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    emailjs.init("20XJqebH2Zwo8qe6G");
+
+    const form     = document.getElementById("contactForm");
+    const feedback = document.getElementById("contactFeedback");
+    const btn      = form ? form.querySelector(".contact__btn") : null;
+
+    function setFieldError(input, msg) {
+      input.style.borderColor = msg ? "rgba(240,128,128,0.7)" : "";
+      let err = input.parentNode.querySelector(".field-error");
+      if (msg) {
+        if (!err) {
+          err = document.createElement("span");
+          err.className = "field-error";
+          err.style.cssText = "font-size:0.66rem;color:#f08080;margin-top:0.25rem;display:block;";
+          input.parentNode.appendChild(err);
+        }
+        err.textContent = msg;
+      } else if (err) {
+        err.remove();
+      }
+    }
+
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const nameVal = document.getElementById("name")?.value.trim() || "";
+        const msgVal  = document.getElementById("message")?.value.trim() || "";
+
+        let valid = true;
+        if (!nameVal) {
+          setFieldError(document.getElementById("name"), "Please enter your name.");
+          valid = false;
+        } else {
+          setFieldError(document.getElementById("name"), "");
+        }
+        if (!msgVal) {
+          setFieldError(document.getElementById("message"), "Please enter a message.");
+          valid = false;
+        } else {
+          setFieldError(document.getElementById("message"), "");
+        }
+        if (!valid) return;
+
+        if (btn) { btn.innerText = "SENDING…"; btn.disabled = true; }
+        if (feedback) { feedback.innerText = "Sending…"; feedback.className = "contact__feedback"; }
+
+        emailjs.send("service_5bo82lt", "template_jzcv58m", {
+          name:    nameVal,
+          message: msgVal
+        })
+        .then(() => {
+          if (feedback) {
+            feedback.innerText = "✅ Message sent successfully!";
+            feedback.className = "contact__feedback contact__feedback--success";
+          }
+          form.reset();
+        })
+        .catch((err) => {
+          if (feedback) {
+            feedback.innerText = "❌ Failed to send. Please try again.";
+            feedback.className = "contact__feedback contact__feedback--error";
+          }
+          console.error(err);
+        })
+        .finally(() => {
+          if (btn) { btn.innerText = "SEND MESSAGE"; btn.disabled = false; }
+        });
+      });
+    }
+  });
+  </script>
+</body>
+</html>
